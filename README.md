@@ -87,7 +87,7 @@ Use `~/.zshrc` to have it every session
 
 Depending on the project you could add to the list: `main.c`, `*.sh`, `*.pdf`...
 
-### force git stuff:
+### Add stuff:
 
 `git add -f .gitignore` to force adding a file even if it's on the ignore rules
 
@@ -97,17 +97,25 @@ Depending on the project you could add to the list: `main.c`, `*.sh`, `*.pdf`...
 
 `git commit -a -m "<message>"` will add and commit ANY modified files that have already been added to the repository
 
-`git rm -f <wrong_file>` could be __\<folder\>__ with __-rf__
+### Remove stuff:
 
-`git checkout master -f <file>` could be the entire repo without __\<file\>__
- 
-`git remote set-url origin <url>` changes an existing remote repository url
- 
+`git rm -rf <wrong_file/folder>` careful, it's a single command to remove, stage, commit and push
+
+Completely revert lastest commit:
+```
+git reset --hard HEAD^
+git push origin -f
+```
+
+`git checkout master -f <file>` revert changes to match the current commit, could be the entire repo without `<file>`
+
+`git remote set-url origin <url>` changes an existing remote repository `<url>`
+
 Completely messed up a local repo and want to start over?
 
 Could try `rm -rf .git` in the root repository folder
 
-### check stuff:
+### Check stuff:
 
 `git status` pay attention to the messages
  
@@ -116,3 +124,9 @@ Could try `rm -rf .git` in the root repository folder
 `git ls-files` list of commited files
  
 `git diff-tree --no-commit-id --name-only -r <commit-hash>` list of files staged at a specific commit
+
+Go to a specific commit:
+`git checkout <commit hash>` (get the hash from the git log)
+
+Go back to the latest commit:
+`git checkout master`
