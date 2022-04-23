@@ -115,8 +115,10 @@ Could try `rm -rf .git` in the root repository folder
  
 `git log` check that your __HEAD__ is in the same commit as __origin/master__
 
-`git ls-files` list of commited files
- 
+`git ls-files` list of staged files (not necessarily pushed!)
+
+`git diff <file>` see the current changes, checks all files if you don't specify some
+
 `git diff-tree --no-commit-id --name-only -r <commit-hash>` list of files staged at a specific commit
 
 `git checkout <commit hash>` go to a specific commit (get the hash from the git log)
