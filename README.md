@@ -1,6 +1,6 @@
 # 42 cheat sheet
 
-The basics to start swimmig, written as a reference guide with some usefull stuff for the code pool
+The basics to start swimmig, written as a reference guide with some useful stuff for the code pool
 
 # ZSH (~/.zshrc)
 
@@ -18,12 +18,6 @@ setopt HIST_SAVE_NO_DUPS
 setopt HIST_VERIFY
 export HISTSIZE=100
 export SAVEHIST=100
-
-autoload -U colors
-colors
-
-autoload -U compinit
-compinit
 
 alias cc="gcc -Wall -Werror -Wextra *.c && ./a.out"
 alias norm="norminette -R CheckForbiddenSourceHeader ."
