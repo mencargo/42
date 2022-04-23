@@ -39,7 +39,7 @@ set listchars=tab:\ \ ┊
 syntax enable
 ```
 
-Also available at `~/.myvimrc` in exam, so at least memorize `syntax enable`
+Also available at `~/.myvimrc` in an exam, so memorize `syntax enable`
 
 # SSH (~/.ssh)
 Generate keys with `ssh-keygen`
@@ -70,9 +70,9 @@ Go into the \<new_folder\>, do your thing, then:
 
 Follow the installation [guide](https://github.com/42School/norminette)
 
-You need to have [pip](https://pip.pypa.io/en/stable/installation/)
+You need to have python's [pip](https://pip.pypa.io/en/stable/installation/)
 
-And don't forget to update your **PATH**!
+And don't forget to update your $**PATH**
 
 Use `~/.zshrc` to have it every session
 
