@@ -35,8 +35,10 @@ set number
 set foldcolumn=1
 set tabstop=4
 set list
-set listchars=tab:\ \ ┊
+set listchars=tab:\ \ ›,nbsp:·,trail:·
+set laststatus=2
 syntax enable
+highlight SpecialKey ctermfg=darkgray guifg=darkgray
 ```
 
 Also available at `~/.myvimrc` in an exam, so memorize `syntax enable`
