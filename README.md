@@ -76,6 +76,8 @@ And don't forget to update your **PATH**!
 
 Use `~/.zshrc` to have it every session
 
+## Git stuff:
+
 ### ~/src/repo/.gitignore
 ```
 .*
