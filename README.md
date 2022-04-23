@@ -1,8 +1,9 @@
-# 42 Cheat sheet
+# 42 cheat sheet
 
 The basics to start swimmig, written as a reference guide with some usefull stuff for the code pool
 
 # ZSH (~/.zshrc)
+
 ```
 export VISUAL=vim
 export EDITOR=vim
@@ -29,6 +30,7 @@ alias norm="norminette -R CheckForbiddenSourceHeader ."
 ```
 
 # VIM (~/.vimrc)
+
 ```
 set history=500
 set autoread
@@ -46,29 +48,24 @@ syntax enable
 Also available at `~/.myvimrc` in an exam, so memorize `syntax enable`
 
 # SSH (~/.ssh)
-Generate keys with `ssh-keygen`
 
-Public key should be at `~/.ssh/id_rsa.pub`
+Generate keys with `ssh-keygen`, the public key should be at `~/.ssh/id_rsa.pub`
 
 # GIT (~/src/repo/.git)
 
-Upload an existing project to a remote repository.
-Inside your project's root folder:
+Upload an existing project to a remote repository, go inside your project's root folder and:
 
 ```
 git init
 git remote add origin <url>
-git add -A
+git add <files>
 git commit -m "<message>"
 git push --set-upstream origin master
 ```
 
-Start a new project from a remote repository:
+Start a new project from a remote repository just `git clone <url> <new_folder>`
 
-`git clone <url> <new_folder>`
-
-Go into the \<new_folder\>, do your thing, then:
-`git add <files>`, `git commit -m "<message>"` and `git push`
+Go into the `<new_folder>`, do your thing, then `git add <files>`, `git commit -m "<message>"` and `git push`
 
 # Norminette
 
@@ -91,7 +88,12 @@ Use `~/.zshrc` to have it every session
 Depending on the project you could add to the list: `main.c`, `*.sh`, `*.pdf`...
 
 ### force git stuff:
-`git add -f main.c` to force adding a file even if it's on the ignore rules
+
+`git add -f .gitignore` to force adding a file even if it's on the ignore rules
+
+`git add --all` add all files from all paths within your repository (follows ignore rules)
+
+`git add .` add all files from the current folder (also follows ignore rules)
 
 `git commit -a -m "<message>"` will add and commit ANY modified files that have already been added to the repository
 
@@ -106,6 +108,7 @@ Completely messed up a local repo and want to start over?
 Could try `rm -rf .git` in the root repository folder
 
 ### check stuff:
+
 `git status` pay attention to the messages
  
 `git log` check that your __HEAD__ is in the same commit as __origin/master__
