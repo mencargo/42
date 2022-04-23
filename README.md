@@ -125,8 +125,6 @@ Could try `rm -rf .git` in the root repository folder
  
 `git diff-tree --no-commit-id --name-only -r <commit-hash>` list of files staged at a specific commit
 
-Go to a specific commit:
-`git checkout <commit hash>` (get the hash from the git log)
+`git checkout <commit hash>` go to a specific commit (get the hash from the git log)
 
-Go back to the latest commit:
-`git checkout master`
+`git checkout master` go to the latest commit
