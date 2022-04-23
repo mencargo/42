@@ -42,7 +42,9 @@ Depending on the project you could add to the list: `main.c`, `*.sh`, `*.pdf`...
  
 `git remote set-url origin <url>` changes an existing remote repository url
  
-Completely messed up a local repo and want to start over? Could try `rm -rf .git` in the root repository folder
+Completely messed up a local repo and want to start over?
+
+Could try `rm -rf .git` in the root repository folder
 
 ### check stuff:
 `git status` pay attention to the messages
