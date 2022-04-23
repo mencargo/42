@@ -68,11 +68,9 @@ Go into the \<new_folder\>, do your thing, then:
 
 # Norminette
 
-Follow the installation guide at:
-https://github.com/42School/norminette
+Follow the installation [guide](https://github.com/42School/norminette)
 
-If you don't have `pip` already:
-https://pip.pypa.io/en/stable/installation/
+You need to have [pip](https://pip.pypa.io/en/stable/installation/)
 
 And don't forget to update your **PATH**!
 
