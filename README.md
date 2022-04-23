@@ -1,3 +1,7 @@
+# 42 Cheat sheet
+
+The basics to start swimmig, written as a reference guide with some usefull stuff for the code pool
+
 # ZSH (~/.zshrc)
 ```
 export VISUAL=vim
