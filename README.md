@@ -30,12 +30,13 @@ set history=500
 set autoread
 set autoindent
 set smartindent
+set tabstop=4
+set shiftwidth=4
 set ruler
 set incsearch
 set showmatch
 set number
 set foldcolumn=1
-set tabstop=4
 set list
 set listchars=tab:\ \ ›,nbsp:·,trail:·
 set laststatus=2
