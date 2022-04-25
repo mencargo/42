@@ -29,6 +29,7 @@ alias norm="norminette -R CheckForbiddenSourceHeader ."
 set history=500
 set autoread
 set autoindent
+set smartindent
 set ruler
 set incsearch
 set showmatch
