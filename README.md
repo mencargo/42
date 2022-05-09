@@ -78,7 +78,9 @@ Use `~/.zshrc` to have it every session
 
 Add the header [plugin](https://github.com/42Paris/42header) for VIM
 
-Basically copy the [stdheader.vim](https://raw.githubusercontent.com/42Paris/42header/master/plugin/stdheader.vim) file to `~/.vim/plugin/stdheader.vim` and add the following lines to your `~/.vimrc` (with your 42 login user and email):
+Basically copy the [stdheader.vim](https://raw.githubusercontent.com/42Paris/42header/master/plugin/stdheader.vim) file to `~/.vim/plugin/stdheader.vim`
+
+And add the following lines to your `~/.vimrc` (with your 42 login user and email):
 
 ```
 let g:user42 = '42login'
