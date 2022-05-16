@@ -93,7 +93,7 @@ let g:user42 = '42login'
 let g:mail42 = '42login@student.42xxxx'
 ```
 
-Note: You may need to install libbsd to use bsb functions like strlcat and such...
+Note: You may need to install libbsd and compile with -lbsd flag to use bsb functions like strlcat and such...
 
 ## Git stuff:
 
