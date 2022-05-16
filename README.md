@@ -20,6 +20,7 @@ export HISTSIZE=100
 export SAVEHIST=100
 
 alias cc="gcc -Wall -Werror -Wextra *.c && ./a.out"
+alias ccbsd="gcc -lbsd -Wall -Werror -Wextra *.c && ./a.out"
 alias norm="norminette -R CheckForbiddenSourceHeader ."
 ```
 
@@ -81,7 +82,8 @@ Use `~/.zshrc` to have it every session
 To add the header [plugin](https://github.com/42Paris/42header) for VIM, basically copy the [stdheader.vim](https://raw.githubusercontent.com/42Paris/42header/master/plugin/stdheader.vim) file to `~/.vim/plugin/stdheader.vim`:
 
 ```
-curl -O https://raw.githubusercontent.com/42Paris/42header/master/plugin/stdheader.vim ~/.vim/plugin/stdheader.vim
+mkdir -p ~/.vim/plugin
+curl -o ~/.vim/plugin/stdheader.vim https://raw.githubusercontent.com/42Paris/42header/master/plugin/stdheader.vim
 ```
 
 And add the following lines to your `~/.vimrc` (with your 42 login user and email):
@@ -91,12 +93,16 @@ let g:user42 = '42login'
 let g:mail42 = '42login@student.42xxxx'
 ```
 
+Note: You may need to install libbsd to use bsb functions like strlcat and such...
+
 ## Git stuff:
 
 ### ~/src/repo/.gitignore
 ```
 .*
 *.out
+*.o
+*.a
 ```
 
 Depending on the project you could add to the list: `main.c`, `*.sh`, `*.pdf`...
