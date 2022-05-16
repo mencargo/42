@@ -42,6 +42,8 @@ set listchars=tab:\ \ ›,nbsp:·,trail:·
 set laststatus=2
 syntax enable
 highlight SpecialKey ctermfg=darkgray guifg=darkgray
+let g:user42 = '42login'
+let g:mail42 = '42login@student.42xxxx'
 ```
 
 Also available at `~/.myvimrc` in an exam, so memorize `syntax enable`
@@ -76,9 +78,11 @@ And don't forget to update your $**PATH**
 
 Use `~/.zshrc` to have it every session
 
-Add the header [plugin](https://github.com/42Paris/42header) for VIM
+To add the header [plugin](https://github.com/42Paris/42header) for VIM, basically copy the [stdheader.vim](https://raw.githubusercontent.com/42Paris/42header/master/plugin/stdheader.vim) file to `~/.vim/plugin/stdheader.vim`:
 
-Basically copy the [stdheader.vim](https://raw.githubusercontent.com/42Paris/42header/master/plugin/stdheader.vim) file to `~/.vim/plugin/stdheader.vim`
+```
+curl -O https://raw.githubusercontent.com/42Paris/42header/master/plugin/stdheader.vim ~/.vim/plugin/stdheader.vim
+```
 
 And add the following lines to your `~/.vimrc` (with your 42 login user and email):
 
