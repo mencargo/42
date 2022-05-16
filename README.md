@@ -21,7 +21,6 @@ export SAVEHIST=100
 
 alias cc="gcc -Wall -Werror -Wextra *.c && ./a.out"
 alias ccbsd="gcc -lbsd -Wall -Werror -Wextra *.c && ./a.out"
-alias norm="norminette -R CheckForbiddenSourceHeader ."
 ```
 
 # VIM (~/.vimrc)
@@ -79,7 +78,7 @@ And don't forget to update your $**PATH**
 
 Use `~/.zshrc` to have it every session
 
-To add the header [plugin](https://github.com/42Paris/42header) for VIM, basically copy the [stdheader.vim](https://raw.githubusercontent.com/42Paris/42header/master/plugin/stdheader.vim) file to `~/.vim/plugin/stdheader.vim`:
+To add the header [plugin](https://github.com/42Paris/42header) for VIM, basically copy the [stdheader.vim](https://raw.githubusercontent.com/42Paris/42header/master/plugin/stdheader.vim) file to `~/.vim/plugin/stdheader.vim`, like:
 
 ```
 mkdir -p ~/.vim/plugin
@@ -106,6 +105,8 @@ Note: You may need to install libbsd and compile with -lbsd flag to use bsb func
 ```
 
 Depending on the project you could add to the list: `main.c`, `*.sh`, `*.pdf`...
+
+Check the [Git Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf) from GitHub.
 
 ### Add stuff:
 
