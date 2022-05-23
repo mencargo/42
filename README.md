@@ -32,7 +32,7 @@ COLOR_GIT_STAGED='\[\033[0;36m\]'
 COLOR_RESET='\[\033[0m\]'
 
 function git_prompt() {
-  if [ -e ".git" ]; then
+  if git rev-parse --is-inside-work-tree > /dev/null 2>&1; then
     branch_name=$(git symbolic-ref -q HEAD)
     branch_name=${branch_name##refs/heads/}
     branch_name=${branch_name:-HEAD}
@@ -53,12 +53,13 @@ function prompt() {
 
 PROMPT_COMMAND=prompt
 
-alias cc="gcc -Wall -Werror -Wextra *.c && ./a.out"
-
-export HISTCONTROL=erasedups
 export VISUAL=vim
 export EDITOR=vim
 export PATH=$PATH:$HOME/bin:$HOME/.local/bin
+
+alias francinette=/home/mencargo/francinette/tester.sh
+alias paco=/home/mencargo/francinette/tester.sh
+alias cc="gcc -Wall -Werror -Wextra *.c && ./a.out"
 ```
 
 # VIM (~/.vimrc)
