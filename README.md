@@ -5,9 +5,6 @@ The basics to start swimmig, written as a reference guide with some useful stuff
 # ZSH (~/.zshrc)
 
 ```
-export VISUAL=vim
-export EDITOR=vim
-export PATH=$PATH:$HOME/bin:$HOME/.local/bin
 setopt SHARE_HISTORY
 setopt HIST_EXPIRE_DUPS_FIRST
 setopt HIST_IGNORE_DUPS
@@ -19,6 +16,12 @@ setopt HIST_VERIFY
 export HISTSIZE=100
 export SAVEHIST=100
 
+export VISUAL=vim
+export EDITOR=vim
+export PATH=$PATH:$HOME/bin:$HOME/.local/bin
+
+alias francinette=$HOME/francinette/tester.sh
+alias paco=$HOME/francinette/tester.sh
 alias cc="gcc -Wall -Werror -Wextra *.c && ./a.out"
 ```
 
@@ -57,8 +60,8 @@ export VISUAL=vim
 export EDITOR=vim
 export PATH=$PATH:$HOME/bin:$HOME/.local/bin
 
-alias francinette=/home/mencargo/francinette/tester.sh
-alias paco=/home/mencargo/francinette/tester.sh
+alias francinette=$HOME/francinette/tester.sh
+alias paco=$HOME/francinette/tester.sh
 alias cc="gcc -Wall -Werror -Wextra *.c && ./a.out"
 ```
 
